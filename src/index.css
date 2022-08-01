@@ -11,3 +11,99 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.overall{
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.note{
+  background-color: #fef68a;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  overflow-wrap: break-word;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.notes-list{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+}
+
+.note.new{
+  background-color: #67d7cc;
+}
+
+.note.new textarea{
+  border: none;
+  resize: none;
+  background-color: #67d7cc;
+}
+
+.note.new textarea:focus{
+  outline: none;
+}
+
+.save{
+  border-radius: 20px;
+  background-color: #e1e1e1;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.save:hover{
+  background-color: #ededed;
+  cursor: pointer;
+}
+
+.delete-icons{
+  cursor: pointer;
+}
+
+.search{
+  background-color: rgba(187, 187, 181);
+  margin-bottom: 1.5em;
+  border-radius: 10px;
+  display: flex;
+}
+
+.search input{
+  background-color: rgba(187, 187, 181);
+  border: none;
+  font-size: large;
+  border-radius: 10px;
+}
+
+.search input:focus{
+  outline: none;
+}
+
+.title{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.dark-mode{
+  background-color: #042743;
+  height: 100vh;
+}
+
+.dark-mode h1{
+  color: gold;
+}
